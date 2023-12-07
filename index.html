@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TxtEmoji</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="cont">
+        <h1>Text <span>→</span> Emojis</h1>
+        <div class="enc_dec_btn">
+            <button class="enc_btn btn_c">
+                <span><i class="fa-solid fa-lock"></i></span> Encrypt Text
+            </button>
+            <button class="dec_btn btn_c active">
+                <span><i class="fa-solid fa-lock-open"></i></span> Decrypt Text
+            </button>
+        </div>
+        <div class="enc_dec_cont">
+            <div class="enc_cont cont_c active">
+                <h5>1. Type a message</h5>
+                <textarea placeholder="Enter your text to encrypt" id="enc_text" cols="30" rows="10"></textarea>
+                <h5>2. Set a password</h5>
+                <input type="password" id="enc_password" placeholder="E.g. 1234">
+                <h5>3. Encrypt message</h5>
+                <button class="enc_submit submit">
+                    <span><i class="fa-solid fa-lock"></i></span> Encrypt Text
+                </button>
+                <h5 class="enc_h5">Copy Emojis or Save to decrypt</h5>
+                <div class="enc_mesg mesg">
+                    
+                </div>
+            </div>
+
+            <div class="dec_cont cont_c">
+                <h5>1. Paste encrypted emojis</h5>
+                <textarea placeholder="Paste encrypted emojis here" id="dec_text" cols="30" rows="10"></textarea>
+                <h5>2. Type the password</h5>
+                <input type="password" id="dec_password" placeholder="E.g. 1234">
+                <h5>3. Decrypt Emojis</h5>
+                <button class="dec_submit submit">
+                    <span><i class="fa-solid fa-lock-open"></i></span> Decrypt Text
+                </button>
+                <h5 class="dec_h5">There you go!</h5>
+                <div class="dec_mesg mesg">
+                    
+                </div>
+            </div>
+        </div>
+        <h5 class="creator">Created by <span><a href="https://www.instagram.com/sh_ivam_.18/" target="_blank">Shivam Thakur</a></span></h5>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

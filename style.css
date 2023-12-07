@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif, monospace;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000ec;
+    background-image: url(https://txtmoji.com/grid.svg);
+    color: #fff;
+}
+
+.cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont h1{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cont h1 span{
+    display: inline-block;
+    height: 100%;
+    font-size: 70px;
+    margin: 0 10px;
+    transition: transform 0.4s ease;
+    transform: rotate(0deg);
+    margin: 6px 5px;
+}
+
+.enc_dec_btn{
+    width: 350px;
+    padding: 8px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 6px;
+    border: none;
+    background-color: #1c1c1c;
+}
+
+.enc_dec_btn .btn_c{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #232323;
+    color: #fff;
+}
+
+.enc_dec_btn .btn_c span{
+    margin-right: 7px;
+}
+
+.enc_dec_cont{
+    width: min(90%, 750px);
+    padding: 20px 50px;
+    margin: 20px;
+}
+
+.dec_cont{
+    display: none;
+}
+
+.enc_dec_cont h5{
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: .8px;
+    margin: 5px 0;
+}
+
+.enc_dec_cont textarea{
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    background-color: #1c1c1c;
+    color: #ededed;
+}
+
+.enc_dec_cont input{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 12px 15px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+    background-color: #1c1c1c;
+    color: #ededed;
+}
+
+.enc_dec_cont .mesg{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 12px 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    background-color: #1c1c1c;
+    color: #ededed;
+    position: relative;
+    display: none;
+}
+
+.enc_dec_cont .enc_h5, .enc_dec_cont .dec_h5{
+    display: none;
+}
+
+.enc_dec_cont .dec_mesg{
+    font-size: 16px;
+}
+
+.enc_dec_cont .submit{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #1c1c1c;
+    color: #ffffffc8;
+    margin-bottom: 20px;
+}
+
+.enc_dec_cont .submit span{
+    margin-right: 5px;
+}
+
+.enc_dec_btn .active{
+    background-color: transparent;
+    color: #A0A0A0;
+}
+
+.creator{
+    font-size: 16px;
+    font-weight: 200;
+    color: #7e7e7e;
+    margin-bottom: 30px;
+}
+
+.creator span a{
+    color: #a0a0a0;
+}
+
+.creator span{
+    font-weight: 400;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    color: #a0a0a0;
+    cursor: pointer;
+}
+
+.pos{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.pos:hover{
+    opacity: 1;
+}
